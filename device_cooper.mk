@@ -28,7 +28,8 @@ PRODUCT_PACKAGES += \
     wmiconfig
 
 PRODUCT_PACKAGES += \
-    Torch
+    Torch \
+    gps.cooper
 
 ## Ramdisk
 PRODUCT_COPY_FILES += \

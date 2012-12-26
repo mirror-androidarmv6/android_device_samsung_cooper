@@ -25,6 +25,7 @@ TARGET_KERNEL_CONFIG := cyanogenmod_cooper_defconfig
 
 SMALLER_FONT_FOOTPRINT := true
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/cooper/bluetooth
+BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := cooper
 
 ## Assert
 TARGET_OTA_ASSERT_DEVICE := cooper,GT-S5830
