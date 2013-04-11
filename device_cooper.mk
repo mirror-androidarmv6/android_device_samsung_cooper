@@ -28,6 +28,9 @@ PRODUCT_COPY_FILES += \
     device/samsung/msm7x27-common/ramdisk/ueventd.msm7x27.rc:root/ueventd.gt-s5830board.rc \
     device/samsung/cooper/ramdisk/COOPER.rle:root/COOPER.rle
 
+## Build the ath6kl-compat driver
+BOARD_WLAN_DEVICE := ath6kl_compat
+
 # Inherit products (Most specific first)
 # cooper blobs > samsung common(device/vendor) > other blobs
 $(call inherit-product, vendor/samsung/cooper/vendor_blobs.mk)
