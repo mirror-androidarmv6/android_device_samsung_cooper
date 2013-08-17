@@ -27,13 +27,17 @@ TARGET_BOOTLOADER_BOARD_NAME := cooper
 TARGET_KERNEL_CONFIG := cyanogenmod_cooper_defconfig
 TARGET_OTA_ASSERT_DEVICE := cooper,GT-S5830
 
+## Build the 3.0.x Kernel
+#BUILD_WITH_30X_KERNEL := true
+#BOARD_WLAN_DEVICE := ath6kl_compat
+
 ## Recovery
 BOARD_LDPI_RECOVERY := true
 BOARD_USE_CUSTOM_RECOVERY_FONT := "<font_7x16.h>"
 BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/cooper/recovery/recovery_ui.c
 BOARD_CUSTOM_GRAPHICS := ../../../device/samsung/cooper/recovery/graphics.c
 TARGET_RECOVERY_INITRC := device/samsung/cooper/recovery/recovery.rc
-TARGET_RECOVERY_FSTAB := device/samsung/cooper/recovery/fstab.cooper
+TARGET_RECOVERY_FSTAB := device/samsung/cooper/recovery/recovery.fstab
 RECOVERY_FSTAB_VERSION := 2
 
 SMALLER_FONT_FOOTPRINT := true
