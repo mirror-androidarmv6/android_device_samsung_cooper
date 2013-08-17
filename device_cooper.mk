@@ -23,7 +23,9 @@ PRODUCT_PACKAGES += \
 
 ## Ramdisk
 PRODUCT_COPY_FILES += \
-    device/samsung/cooper/ramdisk/COOPER.rle:root/COOPER.rle
+    device/samsung/cooper/ramdisk/COOPER.rle:root/COOPER.rle \
+    device/samsung/cooper/ramdisk/init.msm7x27.rc:root/init.gt-s5830board.rc \
+    device/samsung/msm7x27-common/ramdisk/fstab.msm7x27:root/fstab.gt-s5830board
 
 # Inherit products (Most specific first)
 # cooper blobs > samsung common(device/vendor) > other blobs
