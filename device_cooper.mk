@@ -25,7 +25,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     device/samsung/cooper/ramdisk/COOPER.rle:root/COOPER.rle
 
-# Inherit products (Most specific first)
+## Inherit products (Most specific first)
 # cooper blobs > samsung common(device/vendor) > other blobs
 $(call inherit-product, vendor/samsung/cooper/vendor_blobs.mk)
 $(call inherit-product, device/samsung/msm7x27-common/common.mk)

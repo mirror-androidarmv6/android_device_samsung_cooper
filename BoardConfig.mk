@@ -27,6 +27,10 @@ TARGET_BOOTLOADER_BOARD_NAME := cooper
 TARGET_KERNEL_CONFIG := cyanogenmod_cooper_defconfig
 TARGET_OTA_ASSERT_DEVICE := cooper,GT-S5830
 
+## Build the 3.0.x Kernel
+#BUILD_WITH_30X_KERNEL := true
+#BOARD_WLAN_DEVICE := ath6kl_compat
+
 ## Recovery
 BOARD_LDPI_RECOVERY := true
 BOARD_USE_CUSTOM_RECOVERY_FONT := "<font_7x16.h>"
