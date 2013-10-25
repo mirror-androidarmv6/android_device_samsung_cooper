@@ -28,6 +28,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     device/samsung/cooper/ramdisk/COOPER.rle:root/COOPER.rle
 
+## Media Profiles
+PRODUCT_COPY_FILES += \
+    device/samsung/cooper/prebuilt/etc/media_profiles.xml:system/etc/media_profiles.xml \
+
 # Inherit products (Most specific first)
 # cooper blobs > samsung common(device/vendor) > other blobs
 $(call inherit-product, vendor/samsung/cooper/vendor_blobs.mk)

@@ -31,3 +31,5 @@ BOARD_USE_CUSTOM_RECOVERY_FONT := "<font_7x16.h>"
 ## Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/cooper/bluetooth
 
+## 5 MP Camera
+BOARD_CAMERA_5MP := true
