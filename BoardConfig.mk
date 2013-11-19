@@ -27,6 +27,8 @@ TARGET_OTA_ASSERT_DEVICE := cooper,GT-S5830
 ## Recovery
 BOARD_LDPI_RECOVERY := true
 BOARD_USE_CUSTOM_RECOVERY_FONT := "<font_7x16.h>"
+USE_SET_METADATA := false
+
 
 ## Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/cooper/bluetooth
