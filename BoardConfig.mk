@@ -17,17 +17,21 @@
 # Product-specific compile-time definitions.
 #
 
-include device/samsung/msm7x27-common/BoardConfigCommon.mk
-
 ## Kernel, bootloader
-TARGET_BOOTLOADER_BOARD_NAME := cooper
-TARGET_KERNEL_CONFIG := cyanogenmod_cooper_defconfig
-TARGET_OTA_ASSERT_DEVICE := cooper,GT-S5830
+TARGET_BOOTLOADER_BOARD_NAME    := cooper
+TARGET_KERNEL_CONFIG            := cyanogenmod_cooper_defconfig
+TARGET_OTA_ASSERT_DEVICE        := cooper,GT-S5830
 
 ## Recovery
-BOARD_LDPI_RECOVERY := true
-BOARD_USE_CUSTOM_RECOVERY_FONT := "<font_7x16.h>"
+BOARD_LDPI_RECOVERY             := true
+BOARD_USE_CUSTOM_RECOVERY_FONT  := "<font_7x16.h>"
+
+## 5MP Camera
+BOARD_CAMERA_5MP                := true
 
 ## Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/cooper/bluetooth
 
+## This must be last line
+include device/samsung/msm7x27-common/BoardConfigCommon.mk
+## --- END OF FILE ----
